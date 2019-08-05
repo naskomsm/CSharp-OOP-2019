@@ -1,0 +1,17 @@
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip.Tests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip.Tests\bin\Debug\netcoreapp2.1\CarTrip.Tests.deps.json
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip.Tests\bin\Debug\netcoreapp2.1\CarTrip.Tests.runtimeconfig.json
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip.Tests\bin\Debug\netcoreapp2.1\CarTrip.Tests.runtimeconfig.dev.json
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip.Tests\bin\Debug\netcoreapp2.1\CarTrip.Tests.dll
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip.Tests\bin\Debug\netcoreapp2.1\CarTrip.Tests.pdb
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip.Tests\bin\Debug\netcoreapp2.1\CarTrip.dll
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip.Tests\bin\Debug\netcoreapp2.1\CarTrip.pdb
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip.Tests\obj\Debug\netcoreapp2.1\CarTrip.Tests.csprojAssemblyReference.cache
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip.Tests\obj\Debug\netcoreapp2.1\CarTrip.Tests.csproj.CoreCompileInputs.cache
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip.Tests\obj\Debug\netcoreapp2.1\CarTrip.Tests.AssemblyInfoInputs.cache
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip.Tests\obj\Debug\netcoreapp2.1\CarTrip.Tests.AssemblyInfo.cs
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip.Tests\obj\Debug\netcoreapp2.1\CarTrip.Tests.csproj.CopyComplete
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip.Tests\obj\Debug\netcoreapp2.1\CarTrip.Tests.dll
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip.Tests\obj\Debug\netcoreapp2.1\CarTrip.Tests.pdb

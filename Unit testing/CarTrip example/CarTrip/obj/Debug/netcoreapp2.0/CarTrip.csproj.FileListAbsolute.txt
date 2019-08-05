@@ -1,0 +1,11 @@
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip\bin\Debug\netcoreapp2.0\CarTrip.deps.json
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip\bin\Debug\netcoreapp2.0\CarTrip.runtimeconfig.json
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip\bin\Debug\netcoreapp2.0\CarTrip.runtimeconfig.dev.json
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip\bin\Debug\netcoreapp2.0\CarTrip.dll
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip\bin\Debug\netcoreapp2.0\CarTrip.pdb
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip\obj\Debug\netcoreapp2.0\CarTrip.csprojAssemblyReference.cache
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip\obj\Debug\netcoreapp2.0\CarTrip.csproj.CoreCompileInputs.cache
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip\obj\Debug\netcoreapp2.0\CarTrip.AssemblyInfoInputs.cache
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip\obj\Debug\netcoreapp2.0\CarTrip.AssemblyInfo.cs
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip\obj\Debug\netcoreapp2.0\CarTrip.dll
+D:\Downloads\Exam prep 2\03. Unit Tests_Skeleton (.NET Core)\CarTrip\obj\Debug\netcoreapp2.0\CarTrip.pdb

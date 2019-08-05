@@ -1,0 +1,11 @@
+C:\Users\pc1\source\repos\SOLID\MySolidDemo\obj\Debug\netcoreapp2.1\MySolidDemo.csproj.CoreCompileInputs.cache
+C:\Users\pc1\source\repos\SOLID\MySolidDemo\obj\Debug\netcoreapp2.1\MySolidDemo.AssemblyInfoInputs.cache
+C:\Users\pc1\source\repos\SOLID\MySolidDemo\obj\Debug\netcoreapp2.1\MySolidDemo.AssemblyInfo.cs
+C:\Users\pc1\source\repos\SOLID\MySolidDemo\bin\Debug\netcoreapp2.1\MySolidDemo.deps.json
+C:\Users\pc1\source\repos\SOLID\MySolidDemo\bin\Debug\netcoreapp2.1\MySolidDemo.runtimeconfig.json
+C:\Users\pc1\source\repos\SOLID\MySolidDemo\bin\Debug\netcoreapp2.1\MySolidDemo.runtimeconfig.dev.json
+C:\Users\pc1\source\repos\SOLID\MySolidDemo\bin\Debug\netcoreapp2.1\MySolidDemo.dll
+C:\Users\pc1\source\repos\SOLID\MySolidDemo\bin\Debug\netcoreapp2.1\MySolidDemo.pdb
+C:\Users\pc1\source\repos\SOLID\MySolidDemo\obj\Debug\netcoreapp2.1\MySolidDemo.csprojAssemblyReference.cache
+C:\Users\pc1\source\repos\SOLID\MySolidDemo\obj\Debug\netcoreapp2.1\MySolidDemo.dll
+C:\Users\pc1\source\repos\SOLID\MySolidDemo\obj\Debug\netcoreapp2.1\MySolidDemo.pdb
