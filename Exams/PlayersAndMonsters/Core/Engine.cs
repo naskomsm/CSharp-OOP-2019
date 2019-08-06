@@ -2,8 +2,6 @@
 {
     using PlayersAndMonsters.Core.Contracts;
     using System;
-    using System.Collections.Generic;
-    using System.Text;
 
     public class Engine : IEngine
     {
@@ -16,7 +14,6 @@
 
         public void Run()
         {
-
             while (true)
             {
                 string[] input = Console.ReadLine().Split();

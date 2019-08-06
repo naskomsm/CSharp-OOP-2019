@@ -9,7 +9,7 @@
         private int damagePoints;
         private int healthPoints;
 
-        protected Card(string name,int damagePoints,int healthPoints)
+        protected Card(string name, int damagePoints, int healthPoints)
         {
             this.Name = name;
             this.DamagePoints = damagePoints;
@@ -21,9 +21,9 @@
             get => this.name;
             private set
             {
-                if (string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value))
+                if (string.IsNullOrEmpty(value))
                 {
-                    throw new ArgumentException("Card's name cannot be null or an empty string.");
+                    throw new ArgumentException("Card's name cannot be null or empty string.");
                 }
 
                 this.name = value;
@@ -35,7 +35,7 @@
             get => this.damagePoints;
             set
             {
-                if(value < 0)
+                if (value < 0)
                 {
                     throw new ArgumentException("Card's damage points cannot be less than zero.");
                 }
@@ -51,7 +51,7 @@
             {
                 if (value < 0)
                 {
-                    throw new ArgumentException("Card's HP cannot be less than zero.");
+                    throw new ArgumentException("Card's HP cannot be less than zero");
                 }
 
                 this.healthPoints = value;

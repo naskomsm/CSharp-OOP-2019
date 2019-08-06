@@ -14,8 +14,9 @@
         {
             this.cards = new List<ICard>();
         }
-        
-        public int Count { get; }
+
+        public int Count
+            => this.cards.Count;
 
         public IReadOnlyCollection<ICard> Cards
             => this.cards.AsReadOnly();
@@ -39,7 +40,7 @@
         {
             var card = this.cards.FirstOrDefault(x => x.Name == name);
 
-            if(card == null)
+            if (card == null)
             {
                 throw new ArgumentException("Card cannot be null!");
             }

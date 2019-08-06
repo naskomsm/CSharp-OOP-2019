@@ -39,7 +39,7 @@
             {
                 if (value < 0)
                 {
-                    throw new ArgumentException("Player's health bonus cannot be less than zero. ");
+                    throw new ArgumentException("Player's health bonus cannot be less than zero.");
                 }
 
                 this.health = value;

@@ -15,7 +15,8 @@
             this.players = new List<IPlayer>();
         }
 
-        public int Count { get; }
+        public int Count
+            => this.Players.Count;
 
         public IReadOnlyCollection<IPlayer> Players
             => this.players.AsReadOnly();
@@ -24,7 +25,7 @@
         {
             if (player == null)
             {
-                throw new ArgumentException("Player cannot be null!");
+                throw new ArgumentException("Player cannot be null");
             }
 
             if (this.players.Select(x => x.Username).Contains(player.Username))
@@ -39,7 +40,7 @@
         {
             var player = this.players.FirstOrDefault(x => x.Username == username);
 
-            if(player == null)
+            if (player == null)
             {
                 throw new ArgumentException("Player cannot be null!");
             }

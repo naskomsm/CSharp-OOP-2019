@@ -1,7 +1,7 @@
 ﻿namespace PlayersAndMonsters.Models.Players.Contracts
 {
     using PlayersAndMonsters.Repositories.Contracts;
-    
+
     public interface IPlayer
     {
         ICardRepository CardRepository { get; }
