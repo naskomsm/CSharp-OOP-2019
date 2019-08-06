@@ -34,7 +34,7 @@
 
                 this.name = value;
             }
-        } // ok
+        }
 
         public IPilot Pilot
         {
@@ -48,7 +48,7 @@
 
                 this.pilot = value;
             }
-        } // ok
+        }
 
         public double HealthPoints { get; set; }
 

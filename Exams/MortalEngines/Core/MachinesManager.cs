@@ -13,7 +13,7 @@
 
         private PilotFactory pilotFactory;
         private TankFactory tankFactory;
-        private FighterFactory fightorFactory;
+        private FighterFactory fighterFactory;
 
         public MachinesManager()
         {
@@ -22,12 +22,12 @@
 
             this.pilotFactory = new PilotFactory();
             this.tankFactory = new TankFactory();
-            this.fightorFactory = new FighterFactory();
+            this.fighterFactory = new FighterFactory();
         }
 
         public string HirePilot(string name)
         {
-            var pilot = pilotFactory.CreatePilot(name);
+            var pilot = this.pilotFactory.CreatePilot(name);
 
             if (this.pilots.ContainsKey(name))
             {
@@ -37,7 +37,7 @@
             this.pilots.Add(name, pilot);
 
             return $"Pilot {name} hired";
-        } // should be good
+        }
 
         public string ManufactureTank(string name, double attackPoints, double defensePoints)
         {
@@ -51,11 +51,11 @@
             this.machines.Add(name, tank);
 
             return $"Tank {tank.Name} manufactured - attack: {tank.AttackPoints:f2}; defense: {tank.DefensePoints:f2}";
-        } // should be good
+        }
 
         public string ManufactureFighter(string name, double attackPoints, double defensePoints)
         {
-            var fighter = this.fightorFactory.CreateFighter(name, attackPoints, defensePoints);
+            var fighter = this.fighterFactory.CreateFighter(name, attackPoints, defensePoints);
 
             if (this.machines.ContainsKey(name))
             {
@@ -65,7 +65,7 @@
             this.machines.Add(name, fighter);
 
             return $"Fighter {fighter.Name} manufactured - attack: {fighter.AttackPoints:f2}; defense: {fighter.DefensePoints:f2}; aggressive: ON";
-        } // should be good
+        }
 
         public string EngageMachine(string selectedPilotName, string selectedMachineName)
         {
@@ -91,7 +91,7 @@
             machine.Pilot = pilot;
 
             return $"Pilot {pilot.Name} engaged machine {machine.Name}";
-        } // dont know about that
+        }
 
         public string AttackMachines(string attackingMachineName, string defendingMachineName)
         {
@@ -108,12 +108,12 @@
             var attackingMachine = this.machines[attackingMachineName];
             var defendingMachine = this.machines[defendingMachineName];
 
-            if (attackingMachine.HealthPoints <= 0)
+            if (attackingMachine.HealthPoints == 0)
             {
                 return $"Dead machine {attackingMachineName} cannot attack or be attacked";
             }
 
-            if (defendingMachine.HealthPoints <= 0)
+            if (defendingMachine.HealthPoints == 0)
             {
                 return $"Dead machine {defendingMachineName} cannot attack or be attacked";
             }
@@ -121,7 +121,7 @@
             attackingMachine.Attack(defendingMachine);
 
             return $"Machine {defendingMachineName} was attacked by machine {attackingMachineName} - current health: {defendingMachine.HealthPoints:f2}";
-        } // dont know about that  
+        }
 
         public string PilotReport(string pilotReporting)
         {
@@ -133,7 +133,7 @@
             var pilot = this.pilots[pilotReporting];
 
             return pilot.Report();
-        } // should be ok 
+        }
 
         public string MachineReport(string machineName)
         {
@@ -145,7 +145,7 @@
             var machine = this.machines[machineName];
 
             return machine.ToString();
-        } // should be ok 
+        }
 
         public string ToggleFighterAggressiveMode(string fighterName)
         {
@@ -158,7 +158,7 @@
             fighter.ToggleAggressiveMode();
 
             return $"Fighter {fighterName} toggled aggressive mode";
-        } // should be good
+        }
 
         public string ToggleTankDefenseMode(string tankName)
         {
@@ -171,6 +171,6 @@
             tank.ToggleDefenseMode();
 
             return $"Tank {tankName} toggled defense mode";
-        } // should be good
+        }
     }
 }
