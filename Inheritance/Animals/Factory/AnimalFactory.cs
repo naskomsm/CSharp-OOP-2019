@@ -1,5 +1,6 @@
-﻿namespace Animals
+﻿namespace Animals.Factory
 {
+    using Animals.Contracts;
     using System;
 
     public class AnimalFactory

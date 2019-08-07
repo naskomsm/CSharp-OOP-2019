@@ -1,4 +1,4 @@
-﻿namespace Animals
+﻿namespace Animals.Contracts
 {
     using System;
 
@@ -9,8 +9,8 @@
         private string name;
         private int age;
         private string gender;
-        
-        public Animal(string name,int age,string gender)
+
+        public Animal(string name, int age, string gender)
         {
             this.Name = name;
             this.Age = age;
@@ -22,7 +22,7 @@
             get => this.name;
             private set
             {
-                if(string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value))
+                if (string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value))
                 {
                     throw new ArgumentException(ErrorMessage);
                 }
@@ -35,7 +35,7 @@
             get => this.age;
             private set
             {
-                if(value < 0)
+                if (value < 0)
                 {
                     throw new ArgumentException(ErrorMessage);
                 }

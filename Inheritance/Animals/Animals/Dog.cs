@@ -1,8 +1,6 @@
 ﻿namespace Animals
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
+    using Animals.Contracts;
 
     public class Dog : Animal
     {

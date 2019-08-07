@@ -1,11 +1,13 @@
 ﻿namespace Animals
 {
+    using Animals.Contracts;
+    using Animals.Factory;
     using System;
     using System.Collections.Generic;
 
     public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
             var animals = GetAnimals();
             Console.WriteLine(string.Join(Environment.NewLine, animals));
@@ -18,7 +20,7 @@
             while (true)
             {
                 var kind = Console.ReadLine();
-                if(kind == "Beast!")
+                if (kind == "Beast!")
                 {
                     break;
                 }
