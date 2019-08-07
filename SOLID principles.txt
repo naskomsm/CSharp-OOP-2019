@@ -1,0 +1,36 @@
+1. Single responsibility ***SRP*** - Every class should be responsible for only a single part of the functionality and that responsibility should be entirely encapsulated by the class. 
+-> Strong Cohesion ( Ïîñëåäîâàòåëíîñò )
+  -Aim for strong cohesion
+  -Each task maps a single code unit
+  -A method should do one operation
+  -A class should represent one entity
+-> Loose Coupling ( Çàâèñèìîñò )
+  -Aim for loose coupling 
+  -Supports readability and maintainability
+  -Often a sign of good system design
+
+2. Open/Closed ***OCP** - classes, modules and functions should be open for extension, but closed for modifications 
+ -Extensibility - Adding a new behavior doesn’t require changes over existing source code
+ -Reusability - subsystems are suitable for reusing in other projects – modularity
+ -Try to avoid checking ( "IS-A" checking )
+
+3. Liskov Substitution ***LSP***
+ -Derived classes only extend functionalities of the base class must not remove base class behavior.
+ -If you need to check what is the object  - move the behavior inside the object
+
+4. Interface Segregation ***DIP***
+ -Prefer small, cohesive (lean and focused) interfaces
+ -Divide "fat" interfaces into "role" interfaces
+-> Adapter pattern 
+ -Reusing classes that do not have  an interface that  a client requires
+ -Making classes with incompatible interfaces work together
+ -Providing an alternative interface for a class
+
+5. Dependency Inversion - A dependency is any external component / system ( Framework,3rd party library,database,static method etc... )
+
+
+
+
+
+ 
+

@@ -1,0 +1,40 @@
+1.Encapsulation - Using "Access Modifiers" to achieve it. KEEP EVERYTHING PRIVETE AT FIRST AND THEN SHOW IT WHEN NEEDED!
+ - Process of wrapping code and data into single unit.
+ - Flexibility and extensibility of the code.
+ - Reduce complexity.
+ - Structural changes remain local.
+ - Allows validation and data binding.
+
+2.Inheritance
+ - Parent class and child class.
+ - Parent class give its members(properties,fields,methods,constructors etc.) to child class.
+ - Reuse classes and try to not duplicate code.
+
+3.Abstraction - Preserving information that is relevant in a given context, and forgetting information that is irrelevant in that context.
+ - Helps managing complexity.
+ - Ignoring irrelevant features, properties, or functions.
+ - Lets you focus on what the object does instead of how it does it.
+ - Achieve it with INTERFACES or ABSTRACT CLASSES.
+ 
+4.Polymorphism	
+ - Ability of an object to take on many forms:
+public interface IAnimal {}
+public abstart class Mammal {}
+public class Person : Mammal,IAnimal {}
+-> Person IS-A Person , Person IS-AN Animal , Person IS-A Mammal , Person IS-AN Object
+
+ - Pattern matching:
+-> Type pattern: if(Nasko is Person person) ...
+-> Constant pattern: private int const = 10; if(i is const) ...
+-> Var pattern: if(expr is var varname) ...
+RULE: "Anytime you find yourself pattern matching in your code, slap yourself" - Scott Meyers, God in C++;
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Encapsulation vs Abstracton 
+ -Encapsulation -> Used to hide the code and data inside a single unit to protect the data from the outside world. Achieved with acces modifiers
+ -Abstraction -> Proccess of hiding the implementation details and showing only functionality to the user. Achieved with interfaces or abstract classes.
+
+When to use Interface or Abstract class
+ -Use interface -> A is capable of [doing] smth as B , interface for what a class can do
+ -Use abstract class -> A is a B , abstract for what a class is
