@@ -1,4 +1,4 @@
-1.Encapsulation - Using "Access Modifiers" to achieve it. KEEP EVERYTHING PRIVETE AT FIRST AND THEN SHOW IT WHEN NEEDED!
+1.Encapsulation - Using "Access Modifiers" to achieve it. KEEP EVERYTHING PRIVATE AT FIRST AND THEN SHOW IT WHEN NEEDED!
  - Process of wrapping code and data into single unit.
  - Flexibility and extensibility of the code.
  - Reduce complexity.
