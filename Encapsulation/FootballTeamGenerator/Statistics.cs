@@ -64,7 +64,7 @@
         private int Passing
         {
             get => this.passing;
-            set
+            private set
             {
                 if (value < 0 || value > 100)
                 {
@@ -78,7 +78,7 @@
         private int Shooting
         {
             get => this.shooting;
-            set
+            private set
             {
                 if (value < 0 || value > 100)
                 {

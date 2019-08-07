@@ -9,9 +9,10 @@
 
         private string type;
         private double weight;
+
         private Dictionary<string, double> validTypes;
 
-        public Topping(string type,double weight)
+        public Topping(string type, double weight)
         {
             this.validTypes = new Dictionary<string, double>();
 
@@ -23,31 +24,33 @@
 
         public string Type
         {
-            get { return type; }
-            set
+            get => this.type;
+            private set
             {
                 if (!this.validTypes.ContainsKey(value.ToLower()))
                 {
                     throw new ArgumentException($"Cannot place {value} on top of your pizza.");
                 }
+
                 this.type = value;
             }
         }
-        
+
         public double Weight
         {
-            get { return this.weight; }
+            get => this.weight;
             private set
             {
-                if(value < 1 || value > 50)
+                if (value < 1 || value > 50)
                 {
                     throw new ArgumentException($"{this.Type} weight should be in the range [1..50].");
                 }
+
                 this.weight = value;
             }
         }
 
-        public double CalculateCalories() 
+        public double CalculateCalories()
         {
             var calories = BaseToppingCalories * this.Weight * this.validTypes[this.Type.ToLower()];
             return calories;
@@ -60,6 +63,5 @@
             this.validTypes.Add("cheese", 1.1);
             this.validTypes.Add("sauce", 0.9);
         }
-
     }
 }
