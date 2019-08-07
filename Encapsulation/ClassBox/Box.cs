@@ -17,10 +17,8 @@
 
         public double Length
         {
-            get
-            { return this.length; }
-
-            set
+            get => this.length;
+            private set
             {
                 if (value <= 0)
                 {
@@ -33,10 +31,8 @@
 
         public double Width
         {
-            get
-            { return this.width; }
-
-            set
+            get => this.width;
+            private set
             {
                 if (value <= 0)
                 {
@@ -49,10 +45,8 @@
 
         public double Height
         {
-            get
-            { return this.height; }
-
-            set
+            get => this.height;
+            private set
             {
                 if (value <= 0)
                 {

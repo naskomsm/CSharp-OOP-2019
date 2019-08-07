@@ -4,7 +4,7 @@
 
     public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
             double lenght = double.Parse(Console.ReadLine());
             double width = double.Parse(Console.ReadLine());
