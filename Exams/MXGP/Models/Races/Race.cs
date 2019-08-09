@@ -12,9 +12,11 @@
         private int laps;
         private readonly List<IRider> riders;
 
-        public Race()
+        public Race(string name,int laps)
         {
             this.riders = new List<IRider>();
+            this.Name = name;
+            this.Laps = laps;
         }
 
         public string Name
@@ -57,7 +59,7 @@
 
             if(rider.CanParticipate == false)
             {
-                throw new ArgumentException($"Rider {rider.Name} coult not participate in race.");
+                throw new ArgumentException($"Rider {rider.Name} could not participate in race.");
             }
 
             if (this.riders.Select(x => x.Name).Contains(rider.Name))

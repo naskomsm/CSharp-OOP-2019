@@ -12,10 +12,10 @@
 
             switch (type)
             {
-                case "PowerMotorcycle":
+                case "Power":
                     motorcycle = new PowerMotorcycle(model, horsePower);
                     break;
-                case "SpeedMotorcycle":
+                case "Speed":
                     motorcycle = new SpeedMotorcycle(model, horsePower);
                     break;
                 default:

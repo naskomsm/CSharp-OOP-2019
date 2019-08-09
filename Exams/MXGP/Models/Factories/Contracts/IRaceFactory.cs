@@ -1,9 +1,9 @@
 ﻿namespace MXGP.Models.Factories.Contracts
 {
-    using MXGP.Models.Races.Contracts;
+    using MXGP.Models.Races;
 
     public interface IRaceFactory
     {
-        IRace Create();
+        Race Create(string name, int laps);
     }
 }
