@@ -1,33 +1,34 @@
 ﻿namespace MXGP.Repositories
 {
     using MXGP.Models.Motorcycles;
+    using MXGP.Models.Motorcycles.Contracts;
     using System.Collections.Generic;
 
-    public class MotorcycleRepository<T> : Repository<Motorcycle>
+    public class MotorcycleRepository : Repository<IMotorcycle>
     {
-        private readonly List<Motorcycle> motorcycles;
+        private readonly List<IMotorcycle> motorcycles;
 
         public MotorcycleRepository()
         {
-            this.motorcycles = new List<Motorcycle>();
+            this.motorcycles = new List<IMotorcycle>();
         }
 
-        public override void Add(Motorcycle model)
+        public override void Add(IMotorcycle motorcycle)
         {
-            this.motorcycles.Add(model);
+            this.motorcycles.Add(motorcycle);
         }
 
-        public override IReadOnlyCollection<Motorcycle> GetAll()
+        public override IReadOnlyCollection<IMotorcycle> GetAll()
             => this.motorcycles.AsReadOnly();
 
-        public override Motorcycle GetByName(string model)
+        public override IMotorcycle GetByName(string model)
         {
             return this.motorcycles.Find(x => x.Model == model);
         }
 
-        public override bool Remove(Motorcycle model)
+        public override bool Remove(IMotorcycle motorcycle)
         {
-            return this.motorcycles.Remove(model);
+            return this.motorcycles.Remove(motorcycle);
         }
     }
 }

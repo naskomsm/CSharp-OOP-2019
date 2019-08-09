@@ -3,7 +3,7 @@
     using MXGP.Models.Riders;
     using System.Collections.Generic;
 
-    public class RiderRepository<T> : Repository<Rider>
+    public class RiderRepository : Repository<Rider>
     {
         private readonly List<Rider> riders;
 
