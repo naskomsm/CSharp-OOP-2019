@@ -132,20 +132,22 @@
             }
 
             var allRiders = this.riderRepository.GetAll()
-                .OrderByDescending(x => x.Motorcycle.CalculateRacePoints(race.Laps)).ToList();
+                .OrderByDescending(x => x.Motorcycle.CalculateRacePoints(race.Laps))
+                .ToList();
 
-            this.raceRepository.Remove(race);
 
             var output = new List<string>();
             for (int i = 0; i < 3; i++)
             {
                 string place = string.Empty;
-                if (i == 0) place = "first";
+                if (i == 0) place = "wins";
                 else if (i == 1) place = "second";
                 else if (i == 2) place = "third";
 
-                output.Add($"Rider {allRiders[i].Name} is {place} in Loket race.");
+                output.Add($"Rider {allRiders[i].Name} is {place} in {race.Name} race.");
             }
+
+            this.raceRepository.Remove(race);
 
             return string.Join("\n", output);
         }

@@ -6,7 +6,6 @@
     public abstract class Motorcycle : IMotorcycle
     {
         private string model;
-        private int horsePower;
 
         protected Motorcycle(string model, int horsePower, double cubicCentimeters)
         {
@@ -29,14 +28,7 @@
             }
         }
 
-        public int HorsePower
-        {
-            get => this.horsePower;
-            private set
-            {
-                this.horsePower = value;
-            }
-        }
+        public int HorsePower { get; private set; }
 
         public double CubicCentimeters { get; private set; }
 

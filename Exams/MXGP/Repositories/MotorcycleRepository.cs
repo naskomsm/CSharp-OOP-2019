@@ -1,6 +1,5 @@
 ﻿namespace MXGP.Repositories
 {
-    using MXGP.Models.Motorcycles;
     using MXGP.Models.Motorcycles.Contracts;
     using System.Collections.Generic;
 

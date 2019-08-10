@@ -3,7 +3,7 @@
     using MXGP.Models.Races;
     using System.Collections.Generic;
 
-    public class RaceRepository: Repository<Race>
+    public class RaceRepository : Repository<Race>
     {
         private readonly List<Race> races;
 
