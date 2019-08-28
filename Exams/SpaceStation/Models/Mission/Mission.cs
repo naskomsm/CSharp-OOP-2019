@@ -1,8 +1,6 @@
 ﻿namespace SpaceStation.Models.Mission
 {
-    using System;
     using System.Collections.Generic;
-    using System.Linq;
     using SpaceStation.Models.Astronauts.Contracts;
     using SpaceStation.Models.Planets;
 
@@ -14,7 +12,21 @@
             {
                 if (astronaut.CanBreath)
                 {
-                    //todo
+                    List<string> itemsOnPlanet = (List<string>)planet.Items;
+
+                    for (int i = 0; i < itemsOnPlanet.Count; i++)
+                    {
+                        var currentItem = itemsOnPlanet[i];
+
+                        astronaut.Breath();
+                        astronaut.Bag.Items.Add(currentItem);
+                        itemsOnPlanet.Remove(currentItem);
+
+                        if (!astronaut.CanBreath)
+                        {
+                            break;
+                        }
+                    }
                 }
             }
         }
