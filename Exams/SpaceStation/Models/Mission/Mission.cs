@@ -6,6 +6,8 @@
 
     public class Mission : IMission
     {
+        public int DeadAstronauts { get; private set; }
+
         public void Explore(IPlanet planet, ICollection<IAstronaut> astronauts)
         {
             foreach (var astronaut in astronauts)
@@ -22,8 +24,10 @@
                         astronaut.Bag.Items.Add(currentItem);
                         itemsOnPlanet.Remove(currentItem);
 
+                        i--;
                         if (!astronaut.CanBreath)
                         {
+                            DeadAstronauts++;
                             break;
                         }
                     }

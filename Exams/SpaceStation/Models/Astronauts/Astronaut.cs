@@ -14,6 +14,7 @@
         {
             this.Name = name;
             this.Oxygen = oxygen;
+            this.bag = new Backpack();
         }
 
         public string Name

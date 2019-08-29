@@ -6,13 +6,16 @@
     public class Planet : IPlanet
     {
         private string name;
+        private List<string> items;
 
         public Planet(string name)
         {
             this.Name = name;
+            this.items = new List<string>();
         }
 
-        public ICollection<string> Items { get; }
+        public ICollection<string> Items
+            => this.items;
 
         public string Name
         {
