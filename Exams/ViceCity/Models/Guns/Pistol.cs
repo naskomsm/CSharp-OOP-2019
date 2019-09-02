@@ -13,18 +13,25 @@
 
         public override int Fire()
         {
-            if (this.BulletsPerBarrel - bulletsShot > 0)
+            if (this.BulletsPerBarrel < bulletsShot || this.BulletsPerBarrel == 0)
             {
-                this.BulletsPerBarrel -= bulletsShot;
+                //reload
+                if (this.TotalBullets >= bulletsPerBarrel)
+                {
+                    this.BulletsPerBarrel += bulletsPerBarrel;
+                    this.TotalBullets -= bulletsPerBarrel;
+                }
+
+                //cant reload
+                else
+                {
+                    return 0;
+                }
             }
 
             else
             {
-                if (this.TotalBullets > 0)
-                {
-                    this.BulletsPerBarrel += bulletsShot;
-                    this.TotalBullets -= bulletsShot;
-                }
+                this.BulletsPerBarrel -= bulletsShot;
             }
 
             return bulletsShot;

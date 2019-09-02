@@ -2,26 +2,23 @@
 {
     using ViceCity.Core.Contracts;
     using System;
-    using ViceCity.IO.Contracts;
-    using ViceCity.IO;
 
     public class Engine : IEngine
     {
-        private IReader reader;
-        private IWriter writer;
-
+        private Controller controller;
 
         public Engine()
         {
-            this.reader = new Reader();
-            this.writer = new Writer();
-
+            this.controller = new Controller();
         }
+
         public void Run()
         {
             while (true)
             {
-                var input = reader.ReadLine().Split();
+                var input = Console.ReadLine().Split();
+                var output = string.Empty;
+
                 if (input[0] == "Exit")
                 {
                     Environment.Exit(0);
@@ -30,24 +27,33 @@
                 {
                     if (input[0] == "AddPlayer")
                     {
-                        
+                        var username = input[1];
+
+                        output = controller.AddPlayer(username);
                     }
                     else if (input[0] == "AddGun")
                     {
+                        var type = input[1];
+                        var name = input[2];
 
+                        output = controller.AddGun(type, name);
                     }
                     else if (input[0] == "AddGunToPlayer")
                     {
+                        var username = input[1];
 
+                        output = controller.AddGunToPlayer(username);
                     }
                     else if (input[0] == "Fight")
                     {
+                        output = controller.Fight();
+                    }
 
-                    }            
+                    Console.WriteLine(output);
                 }
                 catch (Exception ex)
                 {
-                    writer.WriteLine(ex.Message);
+                    Console.WriteLine(ex.Message);
                 }
             }
         }
